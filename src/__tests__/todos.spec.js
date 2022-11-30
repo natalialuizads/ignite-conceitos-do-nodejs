@@ -3,7 +3,7 @@ const { validate } = require('uuid');
 
 const app = require('../');
 
-describe.skip('Todos', () => {
+describe('Todos', () => {
   it("should be able to list all user's todo", async () => {
     const userResponse = await request(app)
       .post('/users')
